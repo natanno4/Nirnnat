@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
-#include "../include/AIPlayer.h"
-#include "../include/Player.h"
-#include "../include/Board.h"
-#include "../include/StandardLogic.h"
-#include "../include/GameLogic.h"
+#include "../src/AIPlayer.h"
+#include "../src/Player.h"
+#include "../src/Board.h"
+#include "../src/StandardLogic.h"
+#include "../src/GameLogic.h"
 
 TEST(checkAI, checkAlogrithm) {
     Player* player;

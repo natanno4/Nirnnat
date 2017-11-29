@@ -2,10 +2,10 @@
 // Created by nir on 27/11/17.
 //
 #include <gtest/gtest.h>
-#include "../include/Board.h"
-#include "../include/GameFlow.h"
-#include "../include/StandardLogic.h"
-#include "../include/GameLogic.h"
+#include "../src/Board.h"
+#include "../src/GameFlow.h"
+#include "../src/StandardLogic.h"
+#include "../src/GameLogic.h"
 
 // Board test ->
 

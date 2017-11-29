@@ -1,8 +1,10 @@
-//
-// Created by nir on 27/11/17.
-//
+/*
+ * Player.cpp
+ *
+ * natan furer 204594428.
+ */
 
-#include "../include/Player.h"
+#include "Player.h"
 using namespace std;
 
 
@@ -11,19 +13,21 @@ Player::Player(char sign): sign(sign) {
 
 
 char Player::getSign() const {
-    return sign;
+	return sign;
 }
 
 
 void Player::setLastPlayPoint(Point p){
-    lastPlay.setX(p.getX());
-    lastPlay.setY(p.getY());
+	lastPlay.setX(p.getX());
+	lastPlay.setY(p.getY());
 }
 
 
 Point Player::getLastPlayPoint() const {
-    return lastPlay;
+	return lastPlay;
 }
 
 Player::~Player(){
 }
+
+

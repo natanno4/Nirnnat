@@ -1,8 +1,10 @@
-//
-// Created by nir on 27/11/17.
-//
+/*
+ * GameLogic.cpp
+ *
+ *  natan furer 204594428
+ */
 
-#include "../include/GameLogic.h"
+#include "GameLogic.h"
 using namespace std;
 
 GameLogic::GameLogic() {
@@ -11,3 +13,7 @@ GameLogic::GameLogic() {
 GameLogic::~GameLogic() {
 
 }
+
+
+
+

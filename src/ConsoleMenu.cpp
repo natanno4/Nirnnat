@@ -1,7 +1,8 @@
+//
+// Created by natan furer 204594428
+//
 
-
-#include "../include/ConsoleMenu.h"
-
+#include "ConsoleMenu.h"
 using namespace std;
 
 ConsoleMenu::ConsoleMenu() {
@@ -11,7 +12,7 @@ ConsoleMenu::ConsoleMenu() {
 void ConsoleMenu::displayMenu() {
     cout << "welcome to Reversi" << endl;
     cout << "please enter 0 to play vs human player, or, 1 to"
-         << "play vs AI player." << endl;
+          << "play vs AI player." << endl;
 }
 
 
@@ -25,7 +26,7 @@ int  ConsoleMenu::getAndCheckPLayersChoice() {
             cin.ignore(80, '\n');
             cout << "wrong input" << endl;
             cout << "please enter 0 to play vs human player, or, 1 to"
-                 << "play vs AI player." << endl;
+                    << "play vs AI player." << endl;
             continue;
         }
         if (choice == 1) {

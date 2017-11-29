@@ -4,28 +4,28 @@
  * Author: natan furer 204594428
  */
 
-#include "../include/Board.h"
+#include "Board.h"
 #include <iostream>
 using namespace std;
 
 
 Board::Board(int boardSize) : size(boardSize) {
-    numberOfX = 2;
-    numberOfO = 2;
-    board = new char*[size];
-    for (int i = 0; i < size; i++) {
-        board[i] = new char[size];
-    }
+	numberOfX = 2;
+	numberOfO = 2;
+	board = new char*[size];
+	for (int i = 0; i < size; i++) {
+		board[i] = new char[size];
+	}
 
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            board[i][j] = ' ';
-        }
-    }
-    board[3][3] = 'O';
-    board[4][4] = 'O';
-    board[3][4] = 'X';
-    board[4][3] = 'X';
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			board[i][j] = ' ';
+		}
+	}
+	board[3][3] = 'O';
+	board[4][4] = 'O';
+	board[3][4] = 'X';
+	board[4][3] = 'X';
 
 }
 void Board::operator =(const Board &b) {
@@ -41,24 +41,24 @@ void Board::operator =(const Board &b) {
 
 
 void Board::print() const {
-    cout << " |";
-    for(int j = 0; j < size; j++) {
-        cout << " " << j + 1 << " |";
-    }
-    cout << endl;
-    cout << "--";
-    for(int m = 0; m < size; m++) {
-        cout << "----";
-    }
-    cout << endl;
-    for (int i = 0; i < size; i++) {
+	cout << " |";
+	for(int j = 0; j < size; j++) {
+		cout << " " << j + 1 << " |";
+	}
+	cout << endl;
+	cout << "--";
+	for(int m = 0; m < size; m++) {
+		cout << "----";
+	}
+	cout << endl;
+	for (int i = 0; i < size; i++) {
         cout << i + 1 << "| ";
         for (int j = 0; j < size; j++) {
             cout << board[i][j] << " | ";
         }
         cout << endl;
         cout << "--";
-        for(int m = 0; m < size; m++) {
+        for (int m = 0; m < size; m++) {
             cout << "----";
         }
         cout << endl;
@@ -66,42 +66,36 @@ void Board::print() const {
 }
 
 Board::~Board(){
-    for (int i = 0; i < size; i++) {
-        delete[] board[i];
-    }
-    delete[] board;
+	for (int i = 0; i < size; i++) {
+		delete[] board[i];
+	}
+	delete[] board;
 }
 
 int Board::getSize() const {
-    return size;
+	return size;
 }
 
 char Board::getSign(int i, int j) const {
-    return board[i][j];
+	return board[i][j];
 
 }
 
 void Board::putSign(int i, int j, char s) {
-    if (s == 'X') {
-        if (board[i][j] == 'O') {
-            numberOfX++;
-            numberOfO--;
-        } else {
-            if (board[i][j] == ' ') {
-                numberOfX++;
+    int countX = 0, countO = 0;
+    board[i][j] = s;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if(board[i][j] == 'X') {
+                countX++;
             }
-        }
-    } else {
-        if (board[i][j] == 'X') {
-            numberOfX--;
-            numberOfO++;
-        } else {
-            if (board[i][j] == ' ') {
-                numberOfO++;
+            if (board[i][j] == 'O') {
+                countO ++;
             }
         }
     }
-    board[i][j] = s;
+	numberOfX = countX;
+    numberOfO = countO;
 }
 
 int Board::getNumberOfX() const {
@@ -109,12 +103,14 @@ int Board::getNumberOfX() const {
 }
 
 int Board::getNumberOfO() const {
-    return numberOfO;
+	return numberOfO;
 }
 
 bool Board::checkIfTableFull() const {
-    if (size * size == numberOfX + numberOfO) {
-        return true;
-    }
-    return false;
+	if ((size * size) == numberOfX + numberOfO) {
+		return true;
+	}
+	return false;
 }
+
+

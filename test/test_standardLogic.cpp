@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include "../include/Board.h"
-#include "../include/StandardLogic.h"
-#include "../include/GameLogic.h"
+#include "../src/Board.h"
+#include "../src/StandardLogic.h"
+#include "../src/GameLogic.h"
 
 TEST(checkStandardLogic, checkBasicMoves) {
     Board board(8);
