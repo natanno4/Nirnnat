@@ -12,6 +12,9 @@
 #include "StandardPlayer.h"
 #include "AIPlayer.h"
 #include "ConsoleMenu.h"
+#include "PlayerSender.h"
+#include "RemotePlayer.h"
+#include "DisplayOnlineGame.h"
 
 class GameFlow {
 public:
@@ -64,6 +67,9 @@ private:
 	Board & b;
 	bool noMovesX;
 	bool noMovesO;
+    bool senderMove;
+
+	void setOnlinePlayers ();
 };
 
 #endif /* GAMEFLOW_H_ */

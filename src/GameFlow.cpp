@@ -5,15 +5,15 @@
  */
 
 #include "GameFlow.h"
+#include "Client.h"
+
 using namespace std;
 
 
 GameFlow::GameFlow(Board &b) : b(b) {
 	logic = new StandardLogic();
-	display = new ConsoleDisplay();
 	noMovesX = false;
 	noMovesO = false;
-
 }
 
 void GameFlow::playOneTurn() {
@@ -71,25 +71,45 @@ void GameFlow::runGame() {
 	//draw.
 	display->endGameDisplay(playerX, playerO ,b.getNumberOfX(), b.getNumberOfO(),
 			true, b);
-
 }
 
 void GameFlow::initializeGame(ConsoleMenu menu) {
 	menu.displayMenu();
-	if (menu.getAndCheckPLayersChoice()) {
+	int choice = menu.getAndCheckPLayersChoice();
+	if (choice == 2) {
+        display = new ConsoleDisplay();
 		playerX = new StandardPlayer('X');
 		playerO = new AIPlayer;
-	} else {
+	} else if (choice == 1) {
 		playerX = new StandardPlayer('X');
 		playerO = new StandardPlayer('O');
+	} else if(choice == 3) {
+        setOnlinePlayers();
+        display = new DisplayOnlineGame(senderMove);
 	}
-
 	turn = playerX;
 	noTurn = playerX;
 
 }
 
+void GameFlow::setOnlinePlayers () {
+    char * buffer;
+    Client client("127.0.0.1", 8000);
+    client.connectToServer();
+    buffer = client.readFromServer();
+    int numberClient = buffer[0] - '0';
+    if (numberClient == 1) {
+        playerX = new PlayerSender('X', &client);
+        playerO = new RemotePlayer(&client, 'O');
+        senderMove = true;
 
+    } else if (numberClient == 2) {
+        playerO = new PlayerSender('O', &client);
+        playerX = new RemotePlayer(&client, 'X');
+        senderMove = false;
+    }
+
+}
 
 GameFlow::~GameFlow() {
 	delete logic;

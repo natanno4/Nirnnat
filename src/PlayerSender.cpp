@@ -6,14 +6,14 @@
 #include "StandardPlayer.h"
 
 
-PlayerSender::PlayerSender(char sign, const char *serverIP, int serverPort) : Player(sign) {
+PlayerSender::PlayerSender(char sign, Client *c) : Player(sign) {
     player = new StandardPlayer(sign);
-    client = new Client(serverIP, serverPort);
+    client = c;
 
 }
 
 Point PlayerSender::playerMove(vector<Point> &v, Board &b) {
     char buffer[15];
     Point p = player->playerMove(v, b);
-    client.sendPoint()
+
 }

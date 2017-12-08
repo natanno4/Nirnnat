@@ -11,7 +11,7 @@
 
 class PlayerSender : public Player {
 public:
-    PlayerSender(char sign, const char *serverIP, int serverPort);
+    PlayerSender(char sign, Client *c);
     virtual Point playerMove(vector<Point> &v, Board &b);
 
 private:
