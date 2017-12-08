@@ -11,8 +11,9 @@ ConsoleMenu::ConsoleMenu() {
 
 void ConsoleMenu::displayMenu() {
     cout << "welcome to Reversi" << endl;
-    cout << "please enter 0 to play vs human player, or, 1 to"
-          << "play vs AI player." << endl;
+    cout << "choose an opponent type:" << endl;
+    cout << "1. a human local player" << endl << "2. an Ai player"
+            << endl << "3. a remote player" << endl;
 }
 
 
@@ -25,17 +26,21 @@ int  ConsoleMenu::getAndCheckPLayersChoice() {
             cin.clear();
             cin.ignore(80, '\n');
             cout << "wrong input" << endl;
-            cout << "please enter 0 to play vs human player, or, 1 to"
-                    << "play vs AI player." << endl;
+            cout << "choose an opponent type:" << endl;
+            cout << "1. a human local player" << endl << "2. an Ai player"
+                 << endl << "3. a remote player" << endl;
             continue;
         }
         if (choice == 1) {
             return 1;
         } if (choice == 0) {
             return 0;
+        } if (choice == 3) {
+            return 3;
         }
-        cout << "please enter 0 to play vs human player, or, 1 to"
-             << "play vs AI player." << endl;
+        cout << "choose an opponent type:" << endl;
+        cout << "1. a human local player" << endl << "2. an Ai player"
+             << endl << "3. a remote player" << endl;
         cin.ignore(80, '\n');
 
     }
