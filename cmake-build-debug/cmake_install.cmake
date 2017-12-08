@@ -1,4 +1,4 @@
-# Install script for directory: /home/nir/CLionProjects/ass3
+# Install script for directory: /home/natanno4/Desktop/test/Nirnnat
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nir/CLionProjects/ass3/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+  include("/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nir/CLionProjects/ass3/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

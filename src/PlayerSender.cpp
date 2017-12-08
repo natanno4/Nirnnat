@@ -17,8 +17,7 @@ Point PlayerSender::playerMove(vector<Point> &v, Board &b) {
     Point p = player->playerMove(v, b);
     buffer[0] = p.getX() + '0';
     buffer[2] = p.getY() + '0';
-    cout << buffer[0] << "  asad  " << buffer[2] << endl;
+    buffer[1] = ',';
     client->writeToServer(buffer);
     return p;
-
 }

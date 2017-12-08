@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nir/CLionProjects/ass3/lib/googletest-master/googletest/src/gtest-all.cc" "/home/nir/CLionProjects/ass3/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
-  "/home/nir/CLionProjects/ass3/lib/googletest-master/googlemock/src/gmock-all.cc" "/home/nir/CLionProjects/ass3/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
-  "/home/nir/CLionProjects/ass3/lib/googletest-master/googlemock/src/gmock_main.cc" "/home/nir/CLionProjects/ass3/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+  "/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/src/gtest-all.cc" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
+  "/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/src/gmock-all.cc" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
+  "/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/src/gmock_main.cc" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

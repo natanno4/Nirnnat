@@ -81,6 +81,7 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 		playerX = new StandardPlayer('X');
 		playerO = new AIPlayer;
 	} else if (choice == 1) {
+        display = new ConsoleDisplay();
 		playerX = new StandardPlayer('X');
 		playerO = new StandardPlayer('O');
 	} else if(choice == 3) {
@@ -93,10 +94,9 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 }
 
 void GameFlow::setOnlinePlayers () {
-	int whichSign;
-    Client client("127.0.0.1", 8058);
-
-	client.connectToServer();
+    int whichSign;
+    Client client("127.0.0.1", 8060);
+    client.connectToServer();
     whichSign = client.updateSign();
     if (whichSign == 1) {
         playerX = new PlayerSender('X', &client);

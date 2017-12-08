@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_025d7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_025d7.dir/build.make CMakeFiles/cmTC_025d7.dir/build
-make[1]: Entering directory '/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_025d7.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_025d7.dir/CheckSymbolExists.c.o   -c /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_025d7
-/opt/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_025d7.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_025d7.dir/CheckSymbolExists.c.o  -o cmTC_025d7 
-CMakeFiles/cmTC_025d7.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_0106d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0106d.dir/build.make CMakeFiles/cmTC_0106d.dir/build
+make[1]: Entering directory '/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o   -c /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0106d
+/opt/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0106d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o  -o cmTC_0106d 
+CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_025d7.dir/build.make:97: recipe for target 'cmTC_025d7' failed
-make[1]: *** [cmTC_025d7] Error 1
-make[1]: Leaving directory '/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_025d7/fast' failed
-make: *** [cmTC_025d7/fast] Error 2
+CMakeFiles/cmTC_0106d.dir/build.make:97: recipe for target 'cmTC_0106d' failed
+make[1]: *** [cmTC_0106d] Error 1
+make[1]: Leaving directory '/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0106d/fast' failed
+make: *** [cmTC_0106d/fast] Error 2
 
-File /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

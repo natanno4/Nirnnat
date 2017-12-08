@@ -1,7 +1,4 @@
 
-
-
-
 #include "RemotePlayer.h"
 #include <string.h>
 RemotePlayer::RemotePlayer(Client* c, char sig) : client(c), Player(sign) {}

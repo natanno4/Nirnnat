@@ -48,10 +48,10 @@ RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nir/CLionProjects/ass3
+CMAKE_SOURCE_DIR = /home/natanno4/Desktop/test/Nirnnat
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nir/CLionProjects/ass3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -157,19 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named runUnitTests
-
-# Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runUnitTests
-.PHONY : runUnitTests
-
-# fast build rule for target.
-runUnitTests/fast:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-.PHONY : runUnitTests/fast
-
-#=============================================================================
 # Target rules for targets named runMain
 
 # Build rule for target.
@@ -181,6 +168,19 @@ runMain: cmake_check_build_system
 runMain/fast:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/build
 .PHONY : runMain/fast
+
+#=============================================================================
+# Target rules for targets named last
+
+# Build rule for target.
+last: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 last
+.PHONY : last
+
+# fast build rule for target.
+last/fast:
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/build
+.PHONY : last/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -234,41 +234,14 @@ gtest/fast:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 src/AIPlayer.o: src/AIPlayer.cpp.o
 
 .PHONY : src/AIPlayer.o
 
 # target to build an object file
 src/AIPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/AIPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/AIPlayer.cpp.o
 .PHONY : src/AIPlayer.cpp.o
 
 src/AIPlayer.i: src/AIPlayer.cpp.i
@@ -277,8 +250,8 @@ src/AIPlayer.i: src/AIPlayer.cpp.i
 
 # target to preprocess a source file
 src/AIPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/AIPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/AIPlayer.cpp.i
 .PHONY : src/AIPlayer.cpp.i
 
 src/AIPlayer.s: src/AIPlayer.cpp.s
@@ -287,8 +260,8 @@ src/AIPlayer.s: src/AIPlayer.cpp.s
 
 # target to generate assembly for a file
 src/AIPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/AIPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/AIPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/AIPlayer.cpp.s
 .PHONY : src/AIPlayer.cpp.s
 
 src/Board.o: src/Board.cpp.o
@@ -297,8 +270,8 @@ src/Board.o: src/Board.cpp.o
 
 # target to build an object file
 src/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Board.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Board.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Board.cpp.o
 .PHONY : src/Board.cpp.o
 
 src/Board.i: src/Board.cpp.i
@@ -307,8 +280,8 @@ src/Board.i: src/Board.cpp.i
 
 # target to preprocess a source file
 src/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Board.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Board.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Board.cpp.i
 .PHONY : src/Board.cpp.i
 
 src/Board.s: src/Board.cpp.s
@@ -317,9 +290,39 @@ src/Board.s: src/Board.cpp.s
 
 # target to generate assembly for a file
 src/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Board.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Board.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
+
+src/Client.o: src/Client.cpp.o
+
+.PHONY : src/Client.o
+
+# target to build an object file
+src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Client.cpp.o
+.PHONY : src/Client.cpp.o
+
+src/Client.i: src/Client.cpp.i
+
+.PHONY : src/Client.i
+
+# target to preprocess a source file
+src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Client.cpp.i
+.PHONY : src/Client.cpp.i
+
+src/Client.s: src/Client.cpp.s
+
+.PHONY : src/Client.s
+
+# target to generate assembly for a file
+src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Client.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Client.cpp.s
+.PHONY : src/Client.cpp.s
 
 src/ConsoleDisplay.o: src/ConsoleDisplay.cpp.o
 
@@ -327,8 +330,8 @@ src/ConsoleDisplay.o: src/ConsoleDisplay.cpp.o
 
 # target to build an object file
 src/ConsoleDisplay.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleDisplay.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleDisplay.cpp.o
 .PHONY : src/ConsoleDisplay.cpp.o
 
 src/ConsoleDisplay.i: src/ConsoleDisplay.cpp.i
@@ -337,8 +340,8 @@ src/ConsoleDisplay.i: src/ConsoleDisplay.cpp.i
 
 # target to preprocess a source file
 src/ConsoleDisplay.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleDisplay.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleDisplay.cpp.i
 .PHONY : src/ConsoleDisplay.cpp.i
 
 src/ConsoleDisplay.s: src/ConsoleDisplay.cpp.s
@@ -347,8 +350,8 @@ src/ConsoleDisplay.s: src/ConsoleDisplay.cpp.s
 
 # target to generate assembly for a file
 src/ConsoleDisplay.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleDisplay.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleDisplay.cpp.s
 .PHONY : src/ConsoleDisplay.cpp.s
 
 src/ConsoleMenu.o: src/ConsoleMenu.cpp.o
@@ -357,8 +360,8 @@ src/ConsoleMenu.o: src/ConsoleMenu.cpp.o
 
 # target to build an object file
 src/ConsoleMenu.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleMenu.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleMenu.cpp.o
 .PHONY : src/ConsoleMenu.cpp.o
 
 src/ConsoleMenu.i: src/ConsoleMenu.cpp.i
@@ -367,8 +370,8 @@ src/ConsoleMenu.i: src/ConsoleMenu.cpp.i
 
 # target to preprocess a source file
 src/ConsoleMenu.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleMenu.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleMenu.cpp.i
 .PHONY : src/ConsoleMenu.cpp.i
 
 src/ConsoleMenu.s: src/ConsoleMenu.cpp.s
@@ -377,9 +380,36 @@ src/ConsoleMenu.s: src/ConsoleMenu.cpp.s
 
 # target to generate assembly for a file
 src/ConsoleMenu.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ConsoleMenu.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/ConsoleMenu.cpp.s
 .PHONY : src/ConsoleMenu.cpp.s
+
+src/DisplayOnlineGame.o: src/DisplayOnlineGame.cpp.o
+
+.PHONY : src/DisplayOnlineGame.o
+
+# target to build an object file
+src/DisplayOnlineGame.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o
+.PHONY : src/DisplayOnlineGame.cpp.o
+
+src/DisplayOnlineGame.i: src/DisplayOnlineGame.cpp.i
+
+.PHONY : src/DisplayOnlineGame.i
+
+# target to preprocess a source file
+src/DisplayOnlineGame.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.i
+.PHONY : src/DisplayOnlineGame.cpp.i
+
+src/DisplayOnlineGame.s: src/DisplayOnlineGame.cpp.s
+
+.PHONY : src/DisplayOnlineGame.s
+
+# target to generate assembly for a file
+src/DisplayOnlineGame.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.s
+.PHONY : src/DisplayOnlineGame.cpp.s
 
 src/GameDisplay.o: src/GameDisplay.cpp.o
 
@@ -387,8 +417,8 @@ src/GameDisplay.o: src/GameDisplay.cpp.o
 
 # target to build an object file
 src/GameDisplay.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameDisplay.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameDisplay.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameDisplay.cpp.o
 .PHONY : src/GameDisplay.cpp.o
 
 src/GameDisplay.i: src/GameDisplay.cpp.i
@@ -397,8 +427,8 @@ src/GameDisplay.i: src/GameDisplay.cpp.i
 
 # target to preprocess a source file
 src/GameDisplay.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameDisplay.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameDisplay.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameDisplay.cpp.i
 .PHONY : src/GameDisplay.cpp.i
 
 src/GameDisplay.s: src/GameDisplay.cpp.s
@@ -407,8 +437,8 @@ src/GameDisplay.s: src/GameDisplay.cpp.s
 
 # target to generate assembly for a file
 src/GameDisplay.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameDisplay.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameDisplay.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameDisplay.cpp.s
 .PHONY : src/GameDisplay.cpp.s
 
 src/GameFlow.o: src/GameFlow.cpp.o
@@ -417,8 +447,8 @@ src/GameFlow.o: src/GameFlow.cpp.o
 
 # target to build an object file
 src/GameFlow.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameFlow.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameFlow.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameFlow.cpp.o
 .PHONY : src/GameFlow.cpp.o
 
 src/GameFlow.i: src/GameFlow.cpp.i
@@ -427,8 +457,8 @@ src/GameFlow.i: src/GameFlow.cpp.i
 
 # target to preprocess a source file
 src/GameFlow.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameFlow.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameFlow.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameFlow.cpp.i
 .PHONY : src/GameFlow.cpp.i
 
 src/GameFlow.s: src/GameFlow.cpp.s
@@ -437,8 +467,8 @@ src/GameFlow.s: src/GameFlow.cpp.s
 
 # target to generate assembly for a file
 src/GameFlow.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameFlow.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameFlow.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameFlow.cpp.s
 .PHONY : src/GameFlow.cpp.s
 
 src/GameLogic.o: src/GameLogic.cpp.o
@@ -447,8 +477,8 @@ src/GameLogic.o: src/GameLogic.cpp.o
 
 # target to build an object file
 src/GameLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameLogic.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameLogic.cpp.o
 .PHONY : src/GameLogic.cpp.o
 
 src/GameLogic.i: src/GameLogic.cpp.i
@@ -457,8 +487,8 @@ src/GameLogic.i: src/GameLogic.cpp.i
 
 # target to preprocess a source file
 src/GameLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameLogic.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameLogic.cpp.i
 .PHONY : src/GameLogic.cpp.i
 
 src/GameLogic.s: src/GameLogic.cpp.s
@@ -467,8 +497,8 @@ src/GameLogic.s: src/GameLogic.cpp.s
 
 # target to generate assembly for a file
 src/GameLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/GameLogic.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/GameLogic.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/GameLogic.cpp.s
 .PHONY : src/GameLogic.cpp.s
 
 src/Player.o: src/Player.cpp.o
@@ -477,8 +507,8 @@ src/Player.o: src/Player.cpp.o
 
 # target to build an object file
 src/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Player.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Player.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Player.cpp.o
 .PHONY : src/Player.cpp.o
 
 src/Player.i: src/Player.cpp.i
@@ -487,8 +517,8 @@ src/Player.i: src/Player.cpp.i
 
 # target to preprocess a source file
 src/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Player.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Player.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
 src/Player.s: src/Player.cpp.s
@@ -497,9 +527,36 @@ src/Player.s: src/Player.cpp.s
 
 # target to generate assembly for a file
 src/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Player.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Player.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
+
+src/PlayerSender.o: src/PlayerSender.cpp.o
+
+.PHONY : src/PlayerSender.o
+
+# target to build an object file
+src/PlayerSender.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.o
+.PHONY : src/PlayerSender.cpp.o
+
+src/PlayerSender.i: src/PlayerSender.cpp.i
+
+.PHONY : src/PlayerSender.i
+
+# target to preprocess a source file
+src/PlayerSender.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.i
+.PHONY : src/PlayerSender.cpp.i
+
+src/PlayerSender.s: src/PlayerSender.cpp.s
+
+.PHONY : src/PlayerSender.s
+
+# target to generate assembly for a file
+src/PlayerSender.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.s
+.PHONY : src/PlayerSender.cpp.s
 
 src/Point.o: src/Point.cpp.o
 
@@ -507,8 +564,8 @@ src/Point.o: src/Point.cpp.o
 
 # target to build an object file
 src/Point.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Point.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Point.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Point.cpp.o
 .PHONY : src/Point.cpp.o
 
 src/Point.i: src/Point.cpp.i
@@ -517,8 +574,8 @@ src/Point.i: src/Point.cpp.i
 
 # target to preprocess a source file
 src/Point.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Point.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Point.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Point.cpp.i
 .PHONY : src/Point.cpp.i
 
 src/Point.s: src/Point.cpp.s
@@ -527,9 +584,39 @@ src/Point.s: src/Point.cpp.s
 
 # target to generate assembly for a file
 src/Point.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Point.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/Point.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
+
+src/RemotePlayer.o: src/RemotePlayer.cpp.o
+
+.PHONY : src/RemotePlayer.o
+
+# target to build an object file
+src/RemotePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/RemotePlayer.cpp.o
+.PHONY : src/RemotePlayer.cpp.o
+
+src/RemotePlayer.i: src/RemotePlayer.cpp.i
+
+.PHONY : src/RemotePlayer.i
+
+# target to preprocess a source file
+src/RemotePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/RemotePlayer.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/RemotePlayer.cpp.i
+.PHONY : src/RemotePlayer.cpp.i
+
+src/RemotePlayer.s: src/RemotePlayer.cpp.s
+
+.PHONY : src/RemotePlayer.s
+
+# target to generate assembly for a file
+src/RemotePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/RemotePlayer.cpp.s
+.PHONY : src/RemotePlayer.cpp.s
 
 src/StandardLogic.o: src/StandardLogic.cpp.o
 
@@ -537,8 +624,8 @@ src/StandardLogic.o: src/StandardLogic.cpp.o
 
 # target to build an object file
 src/StandardLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardLogic.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardLogic.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardLogic.cpp.o
 .PHONY : src/StandardLogic.cpp.o
 
 src/StandardLogic.i: src/StandardLogic.cpp.i
@@ -547,8 +634,8 @@ src/StandardLogic.i: src/StandardLogic.cpp.i
 
 # target to preprocess a source file
 src/StandardLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardLogic.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardLogic.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardLogic.cpp.i
 .PHONY : src/StandardLogic.cpp.i
 
 src/StandardLogic.s: src/StandardLogic.cpp.s
@@ -557,8 +644,8 @@ src/StandardLogic.s: src/StandardLogic.cpp.s
 
 # target to generate assembly for a file
 src/StandardLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardLogic.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardLogic.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardLogic.cpp.s
 .PHONY : src/StandardLogic.cpp.s
 
 src/StandardPlayer.o: src/StandardPlayer.cpp.o
@@ -567,8 +654,8 @@ src/StandardPlayer.o: src/StandardPlayer.cpp.o
 
 # target to build an object file
 src/StandardPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardPlayer.cpp.o
 .PHONY : src/StandardPlayer.cpp.o
 
 src/StandardPlayer.i: src/StandardPlayer.cpp.i
@@ -577,8 +664,8 @@ src/StandardPlayer.i: src/StandardPlayer.cpp.i
 
 # target to preprocess a source file
 src/StandardPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardPlayer.cpp.i
 .PHONY : src/StandardPlayer.cpp.i
 
 src/StandardPlayer.s: src/StandardPlayer.cpp.s
@@ -587,9 +674,36 @@ src/StandardPlayer.s: src/StandardPlayer.cpp.s
 
 # target to generate assembly for a file
 src/StandardPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/StandardPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/StandardPlayer.cpp.s
 .PHONY : src/StandardPlayer.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 test/gtest_main.o: test/gtest_main.cpp.o
 
@@ -597,7 +711,7 @@ test/gtest_main.o: test/gtest_main.cpp.o
 
 # target to build an object file
 test/gtest_main.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/gtest_main.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/gtest_main.cpp.o
 .PHONY : test/gtest_main.cpp.o
 
 test/gtest_main.i: test/gtest_main.cpp.i
@@ -606,7 +720,7 @@ test/gtest_main.i: test/gtest_main.cpp.i
 
 # target to preprocess a source file
 test/gtest_main.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/gtest_main.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/gtest_main.cpp.i
 .PHONY : test/gtest_main.cpp.i
 
 test/gtest_main.s: test/gtest_main.cpp.s
@@ -615,7 +729,7 @@ test/gtest_main.s: test/gtest_main.cpp.s
 
 # target to generate assembly for a file
 test/gtest_main.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/gtest_main.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/gtest_main.cpp.s
 .PHONY : test/gtest_main.cpp.s
 
 test/test_AIPlayer.o: test/test_AIPlayer.cpp.o
@@ -624,8 +738,7 @@ test/test_AIPlayer.o: test/test_AIPlayer.cpp.o
 
 # target to build an object file
 test/test_AIPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_AIPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_AIPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_AIPlayer.cpp.o
 .PHONY : test/test_AIPlayer.cpp.o
 
 test/test_AIPlayer.i: test/test_AIPlayer.cpp.i
@@ -634,8 +747,7 @@ test/test_AIPlayer.i: test/test_AIPlayer.cpp.i
 
 # target to preprocess a source file
 test/test_AIPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_AIPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_AIPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_AIPlayer.cpp.i
 .PHONY : test/test_AIPlayer.cpp.i
 
 test/test_AIPlayer.s: test/test_AIPlayer.cpp.s
@@ -644,8 +756,7 @@ test/test_AIPlayer.s: test/test_AIPlayer.cpp.s
 
 # target to generate assembly for a file
 test/test_AIPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_AIPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_AIPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_AIPlayer.cpp.s
 .PHONY : test/test_AIPlayer.cpp.s
 
 test/test_board.o: test/test_board.cpp.o
@@ -654,7 +765,7 @@ test/test_board.o: test/test_board.cpp.o
 
 # target to build an object file
 test/test_board.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_board.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_board.cpp.o
 .PHONY : test/test_board.cpp.o
 
 test/test_board.i: test/test_board.cpp.i
@@ -663,7 +774,7 @@ test/test_board.i: test/test_board.cpp.i
 
 # target to preprocess a source file
 test/test_board.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_board.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_board.cpp.i
 .PHONY : test/test_board.cpp.i
 
 test/test_board.s: test/test_board.cpp.s
@@ -672,7 +783,7 @@ test/test_board.s: test/test_board.cpp.s
 
 # target to generate assembly for a file
 test/test_board.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_board.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_board.cpp.s
 .PHONY : test/test_board.cpp.s
 
 test/test_standardLogic.o: test/test_standardLogic.cpp.o
@@ -681,8 +792,7 @@ test/test_standardLogic.o: test/test_standardLogic.cpp.o
 
 # target to build an object file
 test/test_standardLogic.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_standardLogic.cpp.o
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_standardLogic.cpp.o
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_standardLogic.cpp.o
 .PHONY : test/test_standardLogic.cpp.o
 
 test/test_standardLogic.i: test/test_standardLogic.cpp.i
@@ -691,8 +801,7 @@ test/test_standardLogic.i: test/test_standardLogic.cpp.i
 
 # target to preprocess a source file
 test/test_standardLogic.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_standardLogic.cpp.i
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_standardLogic.cpp.i
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_standardLogic.cpp.i
 .PHONY : test/test_standardLogic.cpp.i
 
 test/test_standardLogic.s: test/test_standardLogic.cpp.s
@@ -701,8 +810,7 @@ test/test_standardLogic.s: test/test_standardLogic.cpp.s
 
 # target to generate assembly for a file
 test/test_standardLogic.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/test/test_standardLogic.cpp.s
-	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/test/test_standardLogic.cpp.s
+	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/test/test_standardLogic.cpp.s
 .PHONY : test/test_standardLogic.cpp.s
 
 # Help Target
@@ -716,28 +824,31 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... runUnitTests"
 	@echo "... edit_cache"
 	@echo "... runMain"
+	@echo "... last"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/AIPlayer.o"
 	@echo "... src/AIPlayer.i"
 	@echo "... src/AIPlayer.s"
 	@echo "... src/Board.o"
 	@echo "... src/Board.i"
 	@echo "... src/Board.s"
+	@echo "... src/Client.o"
+	@echo "... src/Client.i"
+	@echo "... src/Client.s"
 	@echo "... src/ConsoleDisplay.o"
 	@echo "... src/ConsoleDisplay.i"
 	@echo "... src/ConsoleDisplay.s"
 	@echo "... src/ConsoleMenu.o"
 	@echo "... src/ConsoleMenu.i"
 	@echo "... src/ConsoleMenu.s"
+	@echo "... src/DisplayOnlineGame.o"
+	@echo "... src/DisplayOnlineGame.i"
+	@echo "... src/DisplayOnlineGame.s"
 	@echo "... src/GameDisplay.o"
 	@echo "... src/GameDisplay.i"
 	@echo "... src/GameDisplay.s"
@@ -750,15 +861,24 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/PlayerSender.o"
+	@echo "... src/PlayerSender.i"
+	@echo "... src/PlayerSender.s"
 	@echo "... src/Point.o"
 	@echo "... src/Point.i"
 	@echo "... src/Point.s"
+	@echo "... src/RemotePlayer.o"
+	@echo "... src/RemotePlayer.i"
+	@echo "... src/RemotePlayer.s"
 	@echo "... src/StandardLogic.o"
 	@echo "... src/StandardLogic.i"
 	@echo "... src/StandardLogic.s"
 	@echo "... src/StandardPlayer.o"
 	@echo "... src/StandardPlayer.i"
 	@echo "... src/StandardPlayer.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... test/gtest_main.o"
 	@echo "... test/gtest_main.i"
 	@echo "... test/gtest_main.s"

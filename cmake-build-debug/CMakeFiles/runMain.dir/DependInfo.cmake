@@ -4,26 +4,28 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nir/CLionProjects/ass3/main.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/main.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/AIPlayer.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/Board.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/Board.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/ConsoleDisplay.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/ConsoleMenu.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/GameDisplay.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/GameDisplay.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/GameFlow.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/GameFlow.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/GameLogic.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/Player.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/Player.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/Point.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/Point.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/StandardLogic.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/StandardLogic.cpp.o"
-  "/home/nir/CLionProjects/ass3/src/StandardPlayer.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o"
-  "/home/nir/CLionProjects/ass3/test/test_AIPlayer.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/test/test_AIPlayer.cpp.o"
-  "/home/nir/CLionProjects/ass3/test/test_standardLogic.cpp" "/home/nir/CLionProjects/ass3/cmake-build-debug/CMakeFiles/runMain.dir/test/test_standardLogic.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/AIPlayer.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/Board.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/Board.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/Client.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/Client.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/ConsoleDisplay.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/ConsoleMenu.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/DisplayOnlineGame.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/GameDisplay.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/GameDisplay.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/GameFlow.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/GameFlow.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/GameLogic.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/Player.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/Player.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/PlayerSender.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/PlayerSender.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/Point.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/Point.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/RemotePlayer.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/StandardLogic.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/StandardLogic.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/StandardPlayer.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o"
+  "/home/natanno4/Desktop/test/Nirnnat/src/main.cpp" "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../lib/googletest-master/googletest/include"
+  "../lib/googletest-master"
   )
 
 # Targets to which this target links.
