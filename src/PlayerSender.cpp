@@ -13,7 +13,12 @@ PlayerSender::PlayerSender(char sign, Client *c) : Player(sign) {
 }
 
 Point PlayerSender::playerMove(vector<Point> &v, Board &b) {
-    char buffer[15];
+    char buffer[10];
     Point p = player->playerMove(v, b);
+    buffer[0] = p.getX() + '0';
+    buffer[2] = p.getY() + '0';
+    cout << buffer[0] << "  asad  " << buffer[2] << endl;
+    client->writeToServer(buffer);
+    return p;
 
 }

@@ -93,17 +93,17 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 }
 
 void GameFlow::setOnlinePlayers () {
-    char * buffer;
-    Client client("127.0.0.1", 8000);
-    client.connectToServer();
-    buffer = client.readFromServer();
-    int numberClient = buffer[0] - '0';
-    if (numberClient == 1) {
+	int whichSign;
+    Client client("127.0.0.1", 8058);
+
+	client.connectToServer();
+    whichSign = client.updateSign();
+    if (whichSign == 1) {
         playerX = new PlayerSender('X', &client);
         playerO = new RemotePlayer(&client, 'O');
         senderMove = true;
 
-    } else if (numberClient == 2) {
+    } else if (whichSign == 2) {
         playerO = new PlayerSender('O', &client);
         playerX = new RemotePlayer(&client, 'X');
         senderMove = false;

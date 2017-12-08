@@ -18,17 +18,23 @@ void Client::connectToServer() {
     if (clientSocket == -1) {
         throw "error opening socket";
     }
+    cout << "Error num" << endl;
 
     struct in_addr address;
     if (!inet_aton(serverIP, &address)) {
         throw "can't parse ip address";
     }
 
+    cout << "Error num111" << endl;
+
     struct hostent *server;
     server = gethostbyaddr((const void*)&address, sizeof(address), AF_INET);
     if (server == NULL) {
         throw "server unreachable";
     }
+
+    cout << "Error num222" << endl;
+
 
     struct sockaddr_in serverAddress;
     bzero((char*)&address, sizeof(address));
@@ -38,6 +44,8 @@ void Client::connectToServer() {
 
     serverAddress.sin_port = htons(serverPort);
 
+    cout << "Error finall" << endl;
+
     if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error connecting to server";
     }
@@ -45,7 +53,8 @@ void Client::connectToServer() {
 }
 
 void Client::writeToServer(char *data) {
-    int n = write(clientSocket, data, sizeof(data));
+    cout << data[0] << "  lama  " << data[2] << endl;
+    int n = write(clientSocket, data, strlen(data));
     if (n == -1) {
         throw "error in writing";
     }
@@ -53,9 +62,22 @@ void Client::writeToServer(char *data) {
 
 char* Client::readFromServer() {
     char* data;
-    int n = read(clientSocket, data, sizeof(data));
+    int n = read(clientSocket, data, strlen(data));
+
     if (n == -1) {
         throw "error in reading";
     }
+
     return data;
+}
+
+int Client::updateSign() {
+    int num, n;
+    n = read(clientSocket, &num, sizeof(num));
+    if (n == -1) {
+        throw "error in reading";
+    }
+    cout << "biniemake me do" << endl;
+
+    return num;
 }

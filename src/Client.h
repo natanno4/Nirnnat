@@ -15,6 +15,7 @@ public:
     string sendPoint(string str);
     char* readFromServer();
     void writeToServer(char* data);
+    int updateSign();
 private:
     const char *serverIP;
     int serverPort;

@@ -33,8 +33,8 @@ int  ConsoleMenu::getAndCheckPLayersChoice() {
         }
         if (choice == 1) {
             return 1;
-        } if (choice == 0) {
-            return 0;
+        } if (choice == 2) {
+            return 2;
         } if (choice == 3) {
             return 3;
         }
