@@ -13,8 +13,8 @@ public:
     Client(const char* serverIP, int serverPort);
     void connectToServer();
     string sendPoint(string str);
-    char* readFromServer();
-    void writeToServer(char* data);
+    char* readFromServer(int &x, int &y);
+    void writeToServer(int x, int y);
     int updateSign();
 private:
     const char *serverIP;

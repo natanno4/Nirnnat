@@ -18,6 +18,6 @@ Point PlayerSender::playerMove(vector<Point> &v, Board &b) {
     buffer[0] = p.getX() + '0';
     buffer[2] = p.getY() + '0';
     buffer[1] = ',';
-    client->writeToServer(buffer);
+    client->writeToServer(p.getX(), p.getY());
     return p;
 }

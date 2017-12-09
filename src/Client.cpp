@@ -46,16 +46,28 @@ void Client::connectToServer() {
     cout << "connect to server" << endl;
 }
 
-void Client::writeToServer(char *data) {
-    int n = write(clientSocket, data, sizeof(data));
+void Client::writeToServer(int x, int y) {
+    int n = write(clientSocket, &x, sizeof(x));
     if (n == -1) {
+        throw "error in writing";
+    }
+    int n2 = write(clientSocket, &y, sizeof(x));
+    if (n2 == -1) {
         throw "error in writing";
     }
 }
 
-char* Client::readFromServer() {
-    char* data;
-    int n = read(clientSocket, data, strlen(data));
+char* Client::readFromServer(int &x, int &y) {
+    int n1 = read(clientSocket, &x, sizeof(x));
+    if (n1 == -1) {
+        throw "error in reading";
+    }
+
+    int n2 = read(clientSocket, &y, sizeof(y));
+    if (n2 == -1) {
+        throw "error in reading";
+    }
+    char *data;
     return data;
 }
 

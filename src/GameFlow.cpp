@@ -95,7 +95,7 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 
 void GameFlow::setOnlinePlayers () {
     int whichSign;
-    Client client("127.0.0.1", 8060);
+    Client client("127.0.0.1", 8073);
     client.connectToServer();
     whichSign = client.updateSign();
     if (whichSign == 1) {
