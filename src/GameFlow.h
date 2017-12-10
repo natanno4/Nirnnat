@@ -15,6 +15,7 @@
 #include "PlayerSender.h"
 #include "RemotePlayer.h"
 #include "DisplayOnlineGame.h"
+#include <fstream>
 
 class GameFlow {
 public:
@@ -68,8 +69,10 @@ private:
 	bool noMovesX;
 	bool noMovesO;
     bool senderMove;
-
+	Client *client;
+	bool onlineGame;
 	void setOnlinePlayers ();
+    string readFromFile(int *port);
 };
 
 #endif /* GAMEFLOW_H_ */

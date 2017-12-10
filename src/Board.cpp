@@ -10,6 +10,9 @@ using namespace std;
 
 
 Board::Board(int boardSize) : size(boardSize) {
+	if (boardSize < 6) {
+		boardSize = 6;
+	}
 	numberOfX = 2;
 	numberOfO = 2;
 	board = new char*[size];

@@ -17,6 +17,7 @@ public:
 private:
     GameDisplay *gameDisplay;
     bool sendersTurn;
+    bool firstTurn;
 };
 
 

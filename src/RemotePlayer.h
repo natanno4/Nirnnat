@@ -8,6 +8,9 @@
 
 #include "Player.h"
 #include "Client.h"
+#define NOMOVE (-2)
+#define ENDGAME (-1)
+
 class RemotePlayer : public Player {
 public:
     RemotePlayer(Client* c, char sign);
