@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 /opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/natanno4/Desktop/project/ex4/Nirnnat
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug
+=======
+/opt/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/natanno4/Desktop/test/Nirnnat
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4

@@ -43,10 +43,17 @@ RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/natanno4/Desktop/project/ex4/Nirnnat
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /home/natanno4/Desktop/test/Nirnnat
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 # Include any dependencies generated for this target.
 include CMakeFiles/runMain.dir/depend.make
@@ -59,6 +66,7 @@ include CMakeFiles/runMain.dir/flags.make
 
 CMakeFiles/runMain.dir/src/Point.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Point.cpp.o: ../src/Point.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runMain.dir/src/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Point.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/Point.cpp
 
@@ -69,6 +77,18 @@ CMakeFiles/runMain.dir/src/Point.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Point.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/Point.cpp -o CMakeFiles/runMain.dir/src/Point.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runMain.dir/src/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Point.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/Point.cpp
+
+CMakeFiles/runMain.dir/src/Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Point.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/Point.cpp > CMakeFiles/runMain.dir/src/Point.cpp.i
+
+CMakeFiles/runMain.dir/src/Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Point.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/Point.cpp -o CMakeFiles/runMain.dir/src/Point.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/Point.cpp.o.requires:
 
@@ -83,6 +103,7 @@ CMakeFiles/runMain.dir/src/Point.cpp.o.provides.build: CMakeFiles/runMain.dir/sr
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/AIPlayer.cpp
 
@@ -93,6 +114,18 @@ CMakeFiles/runMain.dir/src/AIPlayer.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/AIPlayer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/AIPlayer.cpp -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runMain.dir/src/AIPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/AIPlayer.cpp
+
+CMakeFiles/runMain.dir/src/AIPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/AIPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/AIPlayer.cpp > CMakeFiles/runMain.dir/src/AIPlayer.cpp.i
+
+CMakeFiles/runMain.dir/src/AIPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/AIPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/AIPlayer.cpp -o CMakeFiles/runMain.dir/src/AIPlayer.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/AIPlayer.cpp.o.requires:
 
@@ -107,6 +140,7 @@ CMakeFiles/runMain.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/runMain.dir
 
 CMakeFiles/runMain.dir/src/Board.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Board.cpp.o: ../src/Board.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runMain.dir/src/Board.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Board.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/Board.cpp
 
@@ -117,6 +151,18 @@ CMakeFiles/runMain.dir/src/Board.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Board.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/Board.cpp -o CMakeFiles/runMain.dir/src/Board.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runMain.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Board.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/Board.cpp
+
+CMakeFiles/runMain.dir/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/Board.cpp > CMakeFiles/runMain.dir/src/Board.cpp.i
+
+CMakeFiles/runMain.dir/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/Board.cpp -o CMakeFiles/runMain.dir/src/Board.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/Board.cpp.o.requires:
 
@@ -131,6 +177,7 @@ CMakeFiles/runMain.dir/src/Board.cpp.o.provides.build: CMakeFiles/runMain.dir/sr
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o: ../src/GameLogic.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/GameLogic.cpp
 
@@ -141,6 +188,18 @@ CMakeFiles/runMain.dir/src/GameLogic.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/GameLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameLogic.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/GameLogic.cpp -o CMakeFiles/runMain.dir/src/GameLogic.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runMain.dir/src/GameLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameLogic.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/GameLogic.cpp
+
+CMakeFiles/runMain.dir/src/GameLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/GameLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/GameLogic.cpp > CMakeFiles/runMain.dir/src/GameLogic.cpp.i
+
+CMakeFiles/runMain.dir/src/GameLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/GameLogic.cpp -o CMakeFiles/runMain.dir/src/GameLogic.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/GameLogic.cpp.o.requires:
 
@@ -155,6 +214,7 @@ CMakeFiles/runMain.dir/src/GameLogic.cpp.o.provides.build: CMakeFiles/runMain.di
 
 CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o: ../src/ConsoleDisplay.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/ConsoleDisplay.cpp
 
@@ -165,6 +225,18 @@ CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/ConsoleDisplay.cpp -o CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/ConsoleDisplay.cpp
+
+CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/ConsoleDisplay.cpp > CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.i
+
+CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/ConsoleDisplay.cpp -o CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o.requires:
 
@@ -177,6 +249,7 @@ CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o.provides: CMakeFiles/runMain.dir
 CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o.provides.build: CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o
 
 
+<<<<<<< HEAD
 CMakeFiles/runMain.dir/src/PlayerSender.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/PlayerSender.cpp.o: ../src/PlayerSender.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runMain.dir/src/PlayerSender.cpp.o"
@@ -237,6 +310,20 @@ CMakeFiles/runMain.dir/src/GameFlow.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/GameFlow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameFlow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/GameFlow.cpp -o CMakeFiles/runMain.dir/src/GameFlow.cpp.s
+=======
+CMakeFiles/runMain.dir/src/GameFlow.cpp.o: CMakeFiles/runMain.dir/flags.make
+CMakeFiles/runMain.dir/src/GameFlow.cpp.o: ../src/GameFlow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runMain.dir/src/GameFlow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameFlow.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/GameFlow.cpp
+
+CMakeFiles/runMain.dir/src/GameFlow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/GameFlow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/GameFlow.cpp > CMakeFiles/runMain.dir/src/GameFlow.cpp.i
+
+CMakeFiles/runMain.dir/src/GameFlow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameFlow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/GameFlow.cpp -o CMakeFiles/runMain.dir/src/GameFlow.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/GameFlow.cpp.o.requires:
 
@@ -251,6 +338,7 @@ CMakeFiles/runMain.dir/src/GameFlow.cpp.o.provides.build: CMakeFiles/runMain.dir
 
 CMakeFiles/runMain.dir/src/StandardLogic.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/StandardLogic.cpp.o: ../src/StandardLogic.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runMain.dir/src/StandardLogic.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/StandardLogic.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/StandardLogic.cpp
 
@@ -261,6 +349,18 @@ CMakeFiles/runMain.dir/src/StandardLogic.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/StandardLogic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/StandardLogic.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/StandardLogic.cpp -o CMakeFiles/runMain.dir/src/StandardLogic.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runMain.dir/src/StandardLogic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/StandardLogic.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/StandardLogic.cpp
+
+CMakeFiles/runMain.dir/src/StandardLogic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/StandardLogic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/StandardLogic.cpp > CMakeFiles/runMain.dir/src/StandardLogic.cpp.i
+
+CMakeFiles/runMain.dir/src/StandardLogic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/StandardLogic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/StandardLogic.cpp -o CMakeFiles/runMain.dir/src/StandardLogic.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/StandardLogic.cpp.o.requires:
 
@@ -275,6 +375,7 @@ CMakeFiles/runMain.dir/src/StandardLogic.cpp.o.provides.build: CMakeFiles/runMai
 
 CMakeFiles/runMain.dir/src/Player.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Player.cpp.o: ../src/Player.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runMain.dir/src/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Player.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/Player.cpp
 
@@ -285,6 +386,18 @@ CMakeFiles/runMain.dir/src/Player.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/Player.cpp -o CMakeFiles/runMain.dir/src/Player.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runMain.dir/src/Player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Player.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/Player.cpp
+
+CMakeFiles/runMain.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/Player.cpp > CMakeFiles/runMain.dir/src/Player.cpp.i
+
+CMakeFiles/runMain.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/Player.cpp -o CMakeFiles/runMain.dir/src/Player.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/Player.cpp.o.requires:
 
@@ -299,6 +412,7 @@ CMakeFiles/runMain.dir/src/Player.cpp.o.provides.build: CMakeFiles/runMain.dir/s
 
 CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o: ../src/StandardPlayer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/StandardPlayer.cpp
 
@@ -309,6 +423,18 @@ CMakeFiles/runMain.dir/src/StandardPlayer.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/StandardPlayer.cpp -o CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/StandardPlayer.cpp
+
+CMakeFiles/runMain.dir/src/StandardPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/StandardPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/StandardPlayer.cpp > CMakeFiles/runMain.dir/src/StandardPlayer.cpp.i
+
+CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/StandardPlayer.cpp -o CMakeFiles/runMain.dir/src/StandardPlayer.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o.requires:
 
@@ -323,6 +449,7 @@ CMakeFiles/runMain.dir/src/StandardPlayer.cpp.o.provides.build: CMakeFiles/runMa
 
 CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o: ../src/ConsoleMenu.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/ConsoleMenu.cpp
 
@@ -333,6 +460,18 @@ CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/ConsoleMenu.cpp -o CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/ConsoleMenu.cpp
+
+CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/ConsoleMenu.cpp > CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.i
+
+CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/ConsoleMenu.cpp -o CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o.requires:
 
@@ -347,6 +486,7 @@ CMakeFiles/runMain.dir/src/ConsoleMenu.cpp.o.provides.build: CMakeFiles/runMain.
 
 CMakeFiles/runMain.dir/src/GameDisplay.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/GameDisplay.cpp.o: ../src/GameDisplay.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runMain.dir/src/GameDisplay.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameDisplay.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/GameDisplay.cpp
 
@@ -357,6 +497,18 @@ CMakeFiles/runMain.dir/src/GameDisplay.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/GameDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameDisplay.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/GameDisplay.cpp -o CMakeFiles/runMain.dir/src/GameDisplay.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runMain.dir/src/GameDisplay.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/GameDisplay.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/GameDisplay.cpp
+
+CMakeFiles/runMain.dir/src/GameDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/GameDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/GameDisplay.cpp > CMakeFiles/runMain.dir/src/GameDisplay.cpp.i
+
+CMakeFiles/runMain.dir/src/GameDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/GameDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/GameDisplay.cpp -o CMakeFiles/runMain.dir/src/GameDisplay.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/GameDisplay.cpp.o.requires:
 
@@ -371,6 +523,7 @@ CMakeFiles/runMain.dir/src/GameDisplay.cpp.o.provides.build: CMakeFiles/runMain.
 
 CMakeFiles/runMain.dir/src/Client.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/Client.cpp.o: ../src/Client.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runMain.dir/src/Client.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Client.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/Client.cpp
 
@@ -381,6 +534,18 @@ CMakeFiles/runMain.dir/src/Client.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/Client.cpp -o CMakeFiles/runMain.dir/src/Client.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runMain.dir/src/Client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/Client.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/Client.cpp
+
+CMakeFiles/runMain.dir/src/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/Client.cpp > CMakeFiles/runMain.dir/src/Client.cpp.i
+
+CMakeFiles/runMain.dir/src/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/Client.cpp -o CMakeFiles/runMain.dir/src/Client.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/Client.cpp.o.requires:
 
@@ -395,6 +560,7 @@ CMakeFiles/runMain.dir/src/Client.cpp.o.provides.build: CMakeFiles/runMain.dir/s
 
 CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o: ../src/RemotePlayer.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/RemotePlayer.cpp
 
@@ -405,6 +571,18 @@ CMakeFiles/runMain.dir/src/RemotePlayer.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/RemotePlayer.cpp -o CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/RemotePlayer.cpp
+
+CMakeFiles/runMain.dir/src/RemotePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/RemotePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/RemotePlayer.cpp > CMakeFiles/runMain.dir/src/RemotePlayer.cpp.i
+
+CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/RemotePlayer.cpp -o CMakeFiles/runMain.dir/src/RemotePlayer.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o.requires:
 
@@ -419,6 +597,7 @@ CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o.provides.build: CMakeFiles/runMain
 
 CMakeFiles/runMain.dir/src/main.cpp.o: CMakeFiles/runMain.dir/flags.make
 CMakeFiles/runMain.dir/src/main.cpp.o: ../src/main.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runMain.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/main.cpp.o -c /home/natanno4/Desktop/project/ex4/Nirnnat/src/main.cpp
 
@@ -429,6 +608,18 @@ CMakeFiles/runMain.dir/src/main.cpp.i: cmake_force
 CMakeFiles/runMain.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/project/ex4/Nirnnat/src/main.cpp -o CMakeFiles/runMain.dir/src/main.cpp.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runMain.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/main.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/main.cpp
+
+CMakeFiles/runMain.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/main.cpp > CMakeFiles/runMain.dir/src/main.cpp.i
+
+CMakeFiles/runMain.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/main.cpp -o CMakeFiles/runMain.dir/src/main.cpp.s
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 CMakeFiles/runMain.dir/src/main.cpp.o.requires:
 
@@ -441,6 +632,57 @@ CMakeFiles/runMain.dir/src/main.cpp.o.provides: CMakeFiles/runMain.dir/src/main.
 CMakeFiles/runMain.dir/src/main.cpp.o.provides.build: CMakeFiles/runMain.dir/src/main.cpp.o
 
 
+<<<<<<< HEAD
+=======
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.o: CMakeFiles/runMain.dir/flags.make
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.o: ../src/PlayerSender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runMain.dir/src/PlayerSender.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/PlayerSender.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/PlayerSender.cpp
+
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/PlayerSender.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/PlayerSender.cpp > CMakeFiles/runMain.dir/src/PlayerSender.cpp.i
+
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/PlayerSender.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/PlayerSender.cpp -o CMakeFiles/runMain.dir/src/PlayerSender.cpp.s
+
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.requires:
+
+.PHONY : CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.requires
+
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.provides: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.requires
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.provides.build
+.PHONY : CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.provides
+
+CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.provides.build: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o
+
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o: CMakeFiles/runMain.dir/flags.make
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o: ../src/DisplayOnlineGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o -c /home/natanno4/Desktop/test/Nirnnat/src/DisplayOnlineGame.cpp
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natanno4/Desktop/test/Nirnnat/src/DisplayOnlineGame.cpp > CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.i
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natanno4/Desktop/test/Nirnnat/src/DisplayOnlineGame.cpp -o CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.s
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.requires:
+
+.PHONY : CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.requires
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.provides: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.provides.build
+.PHONY : CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.provides
+
+CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.provides.build: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o
+
+
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 # Object files for target runMain
 runMain_OBJECTS = \
 "CMakeFiles/runMain.dir/src/Point.cpp.o" \
@@ -448,8 +690,11 @@ runMain_OBJECTS = \
 "CMakeFiles/runMain.dir/src/Board.cpp.o" \
 "CMakeFiles/runMain.dir/src/GameLogic.cpp.o" \
 "CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o" \
+<<<<<<< HEAD
 "CMakeFiles/runMain.dir/src/PlayerSender.cpp.o" \
 "CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o" \
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 "CMakeFiles/runMain.dir/src/GameFlow.cpp.o" \
 "CMakeFiles/runMain.dir/src/StandardLogic.cpp.o" \
 "CMakeFiles/runMain.dir/src/Player.cpp.o" \
@@ -458,7 +703,13 @@ runMain_OBJECTS = \
 "CMakeFiles/runMain.dir/src/GameDisplay.cpp.o" \
 "CMakeFiles/runMain.dir/src/Client.cpp.o" \
 "CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o" \
+<<<<<<< HEAD
 "CMakeFiles/runMain.dir/src/main.cpp.o"
+=======
+"CMakeFiles/runMain.dir/src/main.cpp.o" \
+"CMakeFiles/runMain.dir/src/PlayerSender.cpp.o" \
+"CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o"
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 # External object files for target runMain
 runMain_EXTERNAL_OBJECTS =
@@ -468,8 +719,11 @@ runMain: CMakeFiles/runMain.dir/src/AIPlayer.cpp.o
 runMain: CMakeFiles/runMain.dir/src/Board.cpp.o
 runMain: CMakeFiles/runMain.dir/src/GameLogic.cpp.o
 runMain: CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o
+<<<<<<< HEAD
 runMain: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o
 runMain: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 runMain: CMakeFiles/runMain.dir/src/GameFlow.cpp.o
 runMain: CMakeFiles/runMain.dir/src/StandardLogic.cpp.o
 runMain: CMakeFiles/runMain.dir/src/Player.cpp.o
@@ -479,9 +733,17 @@ runMain: CMakeFiles/runMain.dir/src/GameDisplay.cpp.o
 runMain: CMakeFiles/runMain.dir/src/Client.cpp.o
 runMain: CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o
 runMain: CMakeFiles/runMain.dir/src/main.cpp.o
+<<<<<<< HEAD
 runMain: CMakeFiles/runMain.dir/build.make
 runMain: CMakeFiles/runMain.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable runMain"
+=======
+runMain: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o
+runMain: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o
+runMain: CMakeFiles/runMain.dir/build.make
+runMain: CMakeFiles/runMain.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable runMain"
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runMain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -494,8 +756,11 @@ CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/AIPlayer.cpp.o.requi
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/Board.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/GameLogic.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/ConsoleDisplay.cpp.o.requires
+<<<<<<< HEAD
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.requires
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/GameFlow.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/StandardLogic.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/Player.cpp.o.requires
@@ -505,6 +770,11 @@ CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/GameDisplay.cpp.o.re
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/Client.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/RemotePlayer.cpp.o.requires
 CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/main.cpp.o.requires
+<<<<<<< HEAD
+=======
+CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/PlayerSender.cpp.o.requires
+CMakeFiles/runMain.dir/requires: CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o.requires
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 .PHONY : CMakeFiles/runMain.dir/requires
 
@@ -513,6 +783,10 @@ CMakeFiles/runMain.dir/clean:
 .PHONY : CMakeFiles/runMain.dir/clean
 
 CMakeFiles/runMain.dir/depend:
+<<<<<<< HEAD
 	cd /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/natanno4/Desktop/project/ex4/Nirnnat /home/natanno4/Desktop/project/ex4/Nirnnat /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/natanno4/Desktop/test/Nirnnat /home/natanno4/Desktop/test/Nirnnat /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : CMakeFiles/runMain.dir/depend
 

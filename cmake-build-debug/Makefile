@@ -48,10 +48,17 @@ RM = /opt/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /home/natanno4/Desktop/project/ex4/Nirnnat
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /home/natanno4/Desktop/test/Nirnnat
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +133,15 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles 0
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : all
 
 # The main clean target
@@ -391,7 +404,10 @@ src/DisplayOnlineGame.o: src/DisplayOnlineGame.cpp.o
 # target to build an object file
 src/DisplayOnlineGame.cpp.o:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.o
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/DisplayOnlineGame.cpp.o
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/DisplayOnlineGame.cpp.o
 
 src/DisplayOnlineGame.i: src/DisplayOnlineGame.cpp.i
@@ -401,7 +417,10 @@ src/DisplayOnlineGame.i: src/DisplayOnlineGame.cpp.i
 # target to preprocess a source file
 src/DisplayOnlineGame.cpp.i:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.i
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/DisplayOnlineGame.cpp.i
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/DisplayOnlineGame.cpp.i
 
 src/DisplayOnlineGame.s: src/DisplayOnlineGame.cpp.s
@@ -411,7 +430,10 @@ src/DisplayOnlineGame.s: src/DisplayOnlineGame.cpp.s
 # target to generate assembly for a file
 src/DisplayOnlineGame.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/DisplayOnlineGame.cpp.s
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/DisplayOnlineGame.cpp.s
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/DisplayOnlineGame.cpp.s
 
 src/GameDisplay.o: src/GameDisplay.cpp.o
@@ -541,7 +563,10 @@ src/PlayerSender.o: src/PlayerSender.cpp.o
 # target to build an object file
 src/PlayerSender.cpp.o:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.o
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/PlayerSender.cpp.o
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/PlayerSender.cpp.o
 
 src/PlayerSender.i: src/PlayerSender.cpp.i
@@ -551,7 +576,10 @@ src/PlayerSender.i: src/PlayerSender.cpp.i
 # target to preprocess a source file
 src/PlayerSender.cpp.i:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.i
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/PlayerSender.cpp.i
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/PlayerSender.cpp.i
 
 src/PlayerSender.s: src/PlayerSender.cpp.s
@@ -561,7 +589,10 @@ src/PlayerSender.s: src/PlayerSender.cpp.s
 # target to generate assembly for a file
 src/PlayerSender.cpp.s:
 	$(MAKE) -f CMakeFiles/runMain.dir/build.make CMakeFiles/runMain.dir/src/PlayerSender.cpp.s
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles/last.dir/build.make CMakeFiles/last.dir/src/PlayerSender.cpp.s
+=======
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 .PHONY : src/PlayerSender.cpp.s
 
 src/Point.o: src/Point.cpp.o

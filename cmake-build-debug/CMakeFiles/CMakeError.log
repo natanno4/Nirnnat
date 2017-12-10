@@ -1,4 +1,5 @@
 Determining if the pthread_create exist failed with the following output:
+<<<<<<< HEAD
 Change Dir: /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp
 
 Run Build Command:"/usr/bin/make" "cmTC_d53ce/fast"
@@ -19,6 +20,28 @@ Makefile:126: recipe for target 'cmTC_d53ce/fast' failed
 make: *** [cmTC_d53ce/fast] Error 2
 
 File /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+=======
+Change Dir: /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0106d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0106d.dir/build.make CMakeFiles/cmTC_0106d.dir/build
+make[1]: Entering directory '/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o   -c /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0106d
+/opt/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0106d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o  -o cmTC_0106d 
+CMakeFiles/cmTC_0106d.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0106d.dir/build.make:97: recipe for target 'cmTC_0106d' failed
+make[1]: *** [cmTC_0106d] Error 1
+make[1]: Leaving directory '/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0106d/fast' failed
+make: *** [cmTC_0106d/fast] Error 2
+
+File /home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 /* */
 #include <pthread.h>
 

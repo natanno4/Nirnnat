@@ -6,5 +6,9 @@ CXX_FLAGS =  -lpthread -g   -std=gnu++98
 
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master 
+=======
+CXX_INCLUDES = -I/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master 
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 

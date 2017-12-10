@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master
+=======
+# Install script for directory: /home/natanno4/Desktop/test/Nirnnat/lib/googletest-master
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +38,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+=======
+  include("/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 endif()
 

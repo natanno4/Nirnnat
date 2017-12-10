@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/install/local.dir
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/CMakeFiles/install.dir
@@ -28,3 +29,35 @@
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/rebuild_cache.dir
 /home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir
+=======
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/install/local.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/install.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/runMain.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/CMakeFiles/last.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/install/strip.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/install/local.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/install.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/list_install_components.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/rebuild_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/CMakeFiles/edit_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/install/strip.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/install/local.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/install.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/list_install_components.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/rebuild_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/edit_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/install/strip.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/install/local.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/install.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/list_install_components.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/edit_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest
+=======
+# Install script for directory: /home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +37,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
 endif()
 
@@ -42,12 +47,28 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/include/gtest")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a")
+endif()
+
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/include/gtest")
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES
+<<<<<<< HEAD
     "/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/gtest.pc"
     "/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/gtest_main.pc"
+=======
+    "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/gtest.pc"
+    "/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/gtest_main.pc"
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
     )
 endif()
 

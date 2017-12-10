@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googlemock\cmake\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -20,12 +21,31 @@
 			<Target title="gtest_main">
 				<Option output="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+=======
+				<Option working_dir="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest"/>
+=======
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -36,6 +56,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -45,12 +66,28 @@
 			<Target title="gtest_main/fast">
 				<Option output="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest"/>
+=======
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -61,6 +98,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -70,12 +108,28 @@
 			<Target title="gtest">
 				<Option output="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest"/>
+=======
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -86,6 +140,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -95,12 +150,28 @@
 			<Target title="gtest/fast">
 				<Option output="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest"/>
+=======
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest"/>
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -111,6 +182,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
+<<<<<<< HEAD
 					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/project/ex4/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
@@ -206,6 +278,103 @@
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 		<Unit filename="/home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+=======
+					<Build command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/natanno4/Desktop/test/Nirnnat/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 	</Project>

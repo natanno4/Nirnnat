@@ -278,9 +278,17 @@ cxxabi.h
 acxx_demangle.h
 -
 
+<<<<<<< HEAD
 /home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/src/gtest_main.cc
 stdio.h
 -
 gtest/gtest.h
 /home/natanno4/Desktop/project/ex4/Nirnnat/lib/googletest-master/googletest/src/gtest/gtest.h
+=======
+/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/src/gtest_main.cc
+stdio.h
+-
+gtest/gtest.h
+/home/natanno4/Desktop/test/Nirnnat/lib/googletest-master/googletest/src/gtest/gtest.h
+>>>>>>> 80c6f875702c36cd2224b6c0801deb0b824dc5b4
 
