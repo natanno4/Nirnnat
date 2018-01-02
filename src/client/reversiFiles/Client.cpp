@@ -59,12 +59,12 @@ void Client::writeToServer(int x, int y) {
 
 char* Client::readFromServer(int &x, int &y) {
     int n1 = read(clientSocket, &x, sizeof(x));
-    if (n1 == -1) {
+    if (n1 == -1 || n1 == 0) {
         throw "error in reading";
     }
 
     int n2 = read(clientSocket, &y, sizeof(y));
-    if (n2 == -1) {
+    if (n2 == -1 || n2 == 0 ) {
         throw "error in reading";
     }
     char *data;
@@ -74,8 +74,12 @@ char* Client::readFromServer(int &x, int &y) {
 int Client::updateSign(){
     int num, n;
     n = read(clientSocket, &num, sizeof(num));
-    if (n == -1) {
+    if (n == -1 || n == 0) {
         throw "error in reading";
     }
     return num;
+}
+
+int Client::getClientSocket() {
+    return clientSocket;
 }

@@ -5,7 +5,6 @@
 #ifndef LAST_CLIENT_H
 #define LAST_CLIENT_H
 
-
 #include "Point.h"
 
 class Client {
@@ -17,7 +16,7 @@ public:
      */
     Client(const char* serverIP, int serverPort);
     /**
-     * connectToserver.
+     * connect Toserver.
      * responsible of connecting to the server.
      */
     void connectToServer();
@@ -44,6 +43,15 @@ public:
      * @return int represent type of player
      */
     int updateSign();
+
+    /**
+     * getClientSocket function.
+     * return client socket
+     * @return socket
+     */
+    int getClientSocket();
+
+
 private:
     const char *serverIP;
     int serverPort;

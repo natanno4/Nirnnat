@@ -8,10 +8,11 @@
 #include"Client.h"
 #include<iostream>
 #include<stdlib.h>
+
+
 using namespace std;
 
 int main() {
-
 	Board b;
 	GameFlow g(b);
 	ConsoleMenu menu;

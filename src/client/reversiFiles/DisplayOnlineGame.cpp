@@ -32,3 +32,7 @@ void DisplayOnlineGame::displayGame(Board &b, vector<Point> v,
     cout << "waiting for other player's move ..." << endl;
     sendersTurn = true;
 }
+
+DisplayOnlineGame::~DisplayOnlineGame() {
+    delete gameDisplay;
+}

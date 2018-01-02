@@ -4,10 +4,11 @@
  *  natan furer 204594428
  */
 
-#include <unistd.h>
+
 #include <cstdlib>
 #include "GameFlow.h"
-#include "Client.h"
+
+
 
 using namespace std;
 
@@ -60,45 +61,53 @@ void GameFlow::playOneTurn() {
 }
 
 void GameFlow::runGame() {
-	while((!b.checkIfTableFull())) {
-		playOneTurn();
-        if ((noMovesX) && (noMovesO)) {
-            if (senderMove && onlineGame) {
-                client->writeToServer(ENDGAME, ENDGAME);
-            }
+    try {
+        while ((!b.checkIfTableFull())) {
+            playOneTurn();
+            if ((noMovesX) && (noMovesO)) {
+                if (senderMove && onlineGame) {
+                    client->writeToServer(ENDGAME, ENDGAME);
+                }
                 break;
-        }
-		//change turns
-		if(turn->getSign() == 'X') {
-			turn = playerO;
-			noTurn = playerX;
-		} else {
-			turn = playerX;
-			noTurn = playerO;
-		}
-        if(onlineGame) {
-            if(senderMove) {
-                senderMove = false;
+            }
+            //change turns
+            if (turn->getSign() == 'X') {
+                turn = playerO;
+                noTurn = playerX;
             } else {
-                senderMove = true;
+                turn = playerX;
+                noTurn = playerO;
+            }
+            if (onlineGame) {
+                if (senderMove) {
+                    senderMove = false;
+                } else {
+                    senderMove = true;
+                }
             }
         }
-	}
-	//player O won.
-	if(b.getNumberOfO() > b.getNumberOfX()) {
-		display->endGameDisplay(playerO, playerX, b.getNumberOfO(), b.getNumberOfX()
-				, false,b);
-		return;
-	}
-	//player X won.
-	if(b.getNumberOfO() < b.getNumberOfX()) {
-		display->endGameDisplay(playerX, playerO,b.getNumberOfX(), b.getNumberOfO()
-				, false, b);
-		return;
-	}
-	//draw.
-	display->endGameDisplay(playerX, playerO ,b.getNumberOfX(), b.getNumberOfO(),
-			true, b);
+        //player O won.
+        if (b.getNumberOfO() > b.getNumberOfX()) {
+            display->endGameDisplay(playerO, playerX, b.getNumberOfO(), b.getNumberOfX(), false, b);
+            return;
+        }
+        //player X won.
+        if (b.getNumberOfO() < b.getNumberOfX()) {
+            display->endGameDisplay(playerX, playerO, b.getNumberOfX(), b.getNumberOfO(), false, b);
+            return;
+        }
+        //draw.
+        display->endGameDisplay(playerX, playerO, b.getNumberOfX(), b.getNumberOfO(),
+                                true, b);
+    } catch (const char * msg) {
+        delete logic;
+        delete playerX;
+        delete playerO;
+        delete display;
+        delete client;
+        cout << "server crashed, exit game" << endl;
+        exit(1);
+    }
 }
 
 void GameFlow::initializeGame(ConsoleMenu menu) {
@@ -115,7 +124,13 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 		playerO = new StandardPlayer('O');
         onlineGame = false;
 	} else if(choice == 3) {
-        setOnlinePlayers();
+        try {
+            setOnlinePlayers();
+        }catch (const char * msg) {
+            cout << "server crashed, exit game" << endl;
+            exit(1);
+        }
+
         display = new DisplayOnlineGame(senderMove);
         onlineGame = true;
 	}
@@ -130,7 +145,8 @@ void GameFlow::setOnlinePlayers () {
     const char* chai = s.c_str();
     client = new Client(chai, port);
     ////////////////
-    client->connectToServer();
+    OnlineStartGameMenu onlineStartGameMenu;
+    onlineStartGameMenu.handlePlayerOption(client);
     whichSign = client->updateSign();
     if (whichSign == 1) {
         playerX = new PlayerSender('X', client);

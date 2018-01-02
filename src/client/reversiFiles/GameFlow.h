@@ -15,7 +15,9 @@
 #include "PlayerSender.h"
 #include "RemotePlayer.h"
 #include "DisplayOnlineGame.h"
+#include "OnlineStartGameMenu.h"
 #include <fstream>
+#include <unistd.h>
 
 class GameFlow {
 public:

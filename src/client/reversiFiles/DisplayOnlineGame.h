@@ -18,6 +18,7 @@ public:
      */
     DisplayOnlineGame(bool myTurn);
     virtual void displayGame(Board &b, vector<Point> v, Player *player, Player *lastTurn);
+    ~DisplayOnlineGame();
 
 private:
     GameDisplay *gameDisplay;
