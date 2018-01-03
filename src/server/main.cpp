@@ -2,7 +2,7 @@
 #include "Server.h"
 #include <stdlib.h>
 #include <fstream>
-#include <string.h>
+
 using namespace std;
 
 int main() {
@@ -17,11 +17,29 @@ int main() {
     int n = atoi(portStr);
     in.close();
     ////////////////////
-    Server server(n);
+    GameManager* manager = new GameManager();
+    GameRooms *rooms = new GameRooms();
+    CommandsManager commandsManager(rooms, manager);
+    ClientHandler handler(&commandsManager);
+    Server server(n, &handler);
     try {
         server.start();
+        string exit;
+        //wait for exit input to turn down the server
+        do {
+            cin >> exit;
+
+        }while(exit.compare("exit"));
+        //close threads and sockets.
+        handler.closeAllClients();
+
     } catch (const char* msg) {
+        delete  manager;
+        delete rooms;
         cout << "cannot start the server because: " << msg << endl;
         exit(-1);
     }
+    server.stop();
+    delete  manager;
+    delete rooms;
 }
