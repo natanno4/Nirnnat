@@ -1,0 +1,17 @@
+reversiFiles/PlayerSender.cpp
+reversiFiles/Board.cpp
+reversiFiles/GameFlow.cpp
+reversiFiles/Point.cpp
+reversiFiles/OnlineStartGameMenu.cpp
+reversiFiles/RemotePlayer.cpp
+reversiFiles/DisplayOnlineGame.cpp
+reversiFiles/Client.cpp
+reversiFiles/GameDisplay.cpp
+reversiFiles/ConsoleDisplay.cpp
+reversiFiles/StandardPlayer.cpp
+reversiFiles/StandardLogic.cpp
+reversiFiles/Player.cpp
+reversiFiles/ConsoleMenu.cpp
+reversiFiles/GameLogic.cpp
+reversiFiles/main.cpp
+reversiFiles/AIPlayer.cpp

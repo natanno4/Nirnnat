@@ -116,7 +116,7 @@ void GameFlow::initializeGame(ConsoleMenu menu) {
 	if (choice == 2) {
         display = new ConsoleDisplay();
 		playerX = new StandardPlayer('X');
-		playerO = new AIPlayer;
+		playerO = new AIPlayer(logic, 'O');
         onlineGame = false;
 	} else if (choice == 1) {
         display = new ConsoleDisplay();

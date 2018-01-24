@@ -7,7 +7,8 @@
 #include <algorithm>
 
 
-AIPlayer::AIPlayer(char sign): Player(sign) {
+AIPlayer::AIPlayer(GameLogic* gameLogic, char sign): Player(sign) {
+    logic = gameLogic;
 }
 
 Point AIPlayer::playerMove(vector<Point> &v, Board &b) {
@@ -15,20 +16,19 @@ Point AIPlayer::playerMove(vector<Point> &v, Board &b) {
     map<int , Point> enemyHighScores;
     Board copyBoard(b.getSize()), enemyBoard(b.getSize());
     vector<int> scores;
-    GameLogic * game = new StandardLogic();
     vector<Point> enemyPossibleMoves;
     //play AI move with each point in the vector.
     for (vector<Point>::iterator it = v.begin(); it != v.end(); it ++) {
         //copy the current board.
         copyBoard = b;
         //play AI move with point
-        game->applyMoveWithGivenPoint(copyBoard,*it, getSign());
-        enemyPossibleMoves = game->possiblePoints(copyBoard, 'X');
+        logic->applyMoveWithGivenPoint(copyBoard,*it, getSign());
+        enemyPossibleMoves = logic->possiblePoints(copyBoard, 'X');
         //sum the competitor score for his possible moves.
         for (vector<Point>::iterator iter = enemyPossibleMoves.begin();
              iter != enemyPossibleMoves.end(); iter ++) {
             enemyBoard = copyBoard;
-            game->applyMoveWithGivenPoint(enemyBoard,*iter, 'X');
+            logic->applyMoveWithGivenPoint(enemyBoard,*iter, 'X');
             score = (enemyBoard).getNumberOfX() - (enemyBoard).getNumberOfO();
             if (score > enemyHighestScore) {
                 //keep the highest score.
@@ -40,7 +40,6 @@ Point AIPlayer::playerMove(vector<Point> &v, Board &b) {
     }
     //sort scores.
     sort(scores.begin(), scores.end());
-    delete(game);
     //return the point that would lead to the competitor lowest score.
     return enemyHighScores[*(scores.begin())];
 

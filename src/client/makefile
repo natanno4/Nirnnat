@@ -9,7 +9,7 @@ a.out: core.o makeO
 	$(CXX) $(CXXFLAGS) @compile.txt
 
 core.o:
-	find src -name "*.cpp" > sources.txt
+	find reversiFiles -name "*.cpp" > sources.txt
 	$(CXX) $(CXXFLAGS) -c @sources.txt
 
 makeO:

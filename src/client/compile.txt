@@ -1,0 +1,17 @@
+./StandardLogic.o
+./Client.o
+./ConsoleMenu.o
+./ConsoleDisplay.o
+./Point.o
+./Player.o
+./main.o
+./GameFlow.o
+./GameLogic.o
+./StandardPlayer.o
+./AIPlayer.o
+./DisplayOnlineGame.o
+./RemotePlayer.o
+./Board.o
+./GameDisplay.o
+./PlayerSender.o
+./OnlineStartGameMenu.o

@@ -9,6 +9,9 @@
 #include "StandardLogic.h"
 
 class AIPlayer : public Player {
+private:
+    GameLogic* logic;
+
 public:
 
     /**
@@ -17,7 +20,7 @@ public:
      *
      * @param sign - player's sign.
      */
-    AIPlayer(char sign = 'O');
+    AIPlayer(GameLogic * gameLogic, char sign = 'O');
 
     virtual Point playerMove(vector<Point> &v, Board &b);
 };

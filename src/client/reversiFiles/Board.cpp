@@ -1,5 +1,5 @@
 /*
- * Board.cpp
+ * Board.cpp3
  *
  * Author: natan furer 204594428
  */
@@ -25,10 +25,10 @@ Board::Board(int boardSize) : size(boardSize) {
 			board[i][j] = ' ';
 		}
 	}
-	board[3][3] = 'O';
-	board[4][4] = 'O';
-	board[3][4] = 'X';
-	board[4][3] = 'X';
+	board[(size / 2) -1][(size / 2) -1] = 'O';
+	board[(size / 2)][(size / 2)] = 'O';
+	board[(size / 2) - 1][size / 2] = 'X';
+	board[size / 2][(size / 2) - 1] = 'X';
 
 }
 void Board::operator =(const Board &b) {

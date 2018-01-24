@@ -24,7 +24,7 @@ void OnlineStartGameMenu::printPlayerOptions(){
 }
 
 void OnlineStartGameMenu::handlePlayerOption(Client *client) {
-    char buffer[MAXCOMMAND];
+    char buffer[MAXCOMMAND] = {0};
     char * temp;
     int counter, n, m = 0, socket;
     char dummy;

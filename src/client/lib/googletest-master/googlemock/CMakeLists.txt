@@ -89,13 +89,13 @@ endif()
 cxx_library(gmock
             "${cxx_strict}"
             "${gtest_dir}/src/gtest-all.cc"
-            src/gmock-all.cc)
+        src/gmock-all.cc)
 
 cxx_library(gmock_main
             "${cxx_strict}"
             "${gtest_dir}/src/gtest-all.cc"
-            src/gmock-all.cc
-            src/gmock_main.cc)
+        src/gmock-all.cc
+        src/gmock_main.cc)
 
 # If the CMake version supports it, attach header directory information
 # to the targets for when we are part of a parent build (ie being pulled
@@ -118,11 +118,11 @@ if(INSTALL_GMOCK)
 
   # configure and install pkgconfig files
   configure_file(
-    cmake/gmock.pc.in
+          cmake/gmock.pc.in
     "${CMAKE_BINARY_DIR}/gmock.pc"
     @ONLY)
   configure_file(
-    cmake/gmock_main.pc.in
+          cmake/gmock_main.pc.in
     "${CMAKE_BINARY_DIR}/gmock_main.pc"
     @ONLY)
   install(FILES "${CMAKE_BINARY_DIR}/gmock.pc" "${CMAKE_BINARY_DIR}/gmock_main.pc"
