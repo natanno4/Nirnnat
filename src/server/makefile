@@ -1,8 +1,8 @@
-# natan furer 204594428
-# nir azaria 204796338 
+# name
+# id
 
 a.out: compileAll
-	g++ -pthread *.o -o ../../exe/exeSer/runServer 
+	g++ *.o -pthread
 	rm -f *.o
 
 compileAll: *.h *.cpp

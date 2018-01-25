@@ -1,6 +1,4 @@
-//
-// Created by natanno4 on 20/01/18.
-//
+
 
 #ifndef SERVER_THREADPOOL_H
 #define SERVER_THREADPOOL_H
@@ -10,11 +8,24 @@
 
 using namespace std;
 
-
+/**
+* ThreadPool class. 
+*/
 class ThreadPool {
     public:
+	/**
+	* constructor. receieve number of threads to initiliaze..
+	*/
         ThreadPool(int threadsNum);
+	/**
+	* addTask function.
+	* add tast the the taskQueue.
+	*/
         void addTask(Task *task);
+	/**
+	* terminate function.
+	* close all threads and delete threadpool.
+	*/
         void terminate();
         virtual~ThreadPool();
     private:
