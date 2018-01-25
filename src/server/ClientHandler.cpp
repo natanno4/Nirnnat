@@ -9,8 +9,10 @@ struct cmd {
     int sock;
 };
 
-ClientHandler::ClientHandler(CommandsManager *cManagar): commandsManager(cManagar)
-{}
+ClientHandler::ClientHandler(CommandsManager *cManagar):
+        commandsManager(cManagar){
+    threadPool = new ThreadPool(THREADS_NUM);
+}
 
 /**
  * handleClientCommand function.
@@ -21,7 +23,7 @@ ClientHandler::ClientHandler(CommandsManager *cManagar): commandsManager(cManaga
 void * handleClientCommand(void * cmnd) {
     vector<string> args;
     int counter = 0;
-    char buffer[MAX_SIZE_COMMAND];
+    char buffer[MAX_SIZE_COMMAND] = {0};
     struct cmd * command = (struct cmd *)cmnd;
     int socket = command->sock;
     //get client command
@@ -32,9 +34,10 @@ void * handleClientCommand(void * cmnd) {
         throw "error in reading";
     }
     //convert client socket to string
-    string clientSocket;
-    clientSocket.push_back(socket + '0');
-    args.push_back(clientSocket);
+
+    stringstream val;
+    val << socket;
+    args.push_back(val.str());
     char * token, *c;
     //get client input after command
     token = strtok(buffer, " ");
@@ -56,29 +59,24 @@ void ClientHandler::handleClient(int socket) {
     struct cmd* c = (struct cmd*)malloc(sizeof(struct cmd*));
     c->mng = commandsManager;
     c->sock = socket;
-    pthread_t pthread;
-    threads.push_back(pthread);
-    int length = threads.size();
-    //create thread for client command.
-    int rc = pthread_create(&threads[length - 1], NULL, handleClientCommand, (void *)c);
+    Task *task = new Task(handleClientCommand, (void *)c);
+    threadPool->addTask(task);
 
-    if (rc) { cout << "Error: unable to create thread, " << rc << endl;
-        exit(-1);
-    }
 
 }
 
 
 void ClientHandler::closeAllClients() {
-    //close threads in list.
-    for (vector<pthread_t>::iterator it = threads.begin();
-            it != threads.end(); it++) {
-        pthread_cancel(*it);
-    }
+    //close thread pool
+    threadPool->terminate();
     vector<string> args;
     //close sockets in games.
     commandsManager->executeCommand("closeSockets", args);
 
+}
+
+ClientHandler::~ ClientHandler() {
+    delete threadPool;
 }
 
 
