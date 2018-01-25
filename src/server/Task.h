@@ -9,14 +9,7 @@
 class Task {
 
 public:
-    /**
-    * constructor. recieve a function to execute and args needed to.
-    */	
     Task(void * (*func)(void *arg), void *arg) : func(func), arg(arg) {}
-    /**
-    * execute function.
-    * execute task by calling the given function in costructor with the given args.
-    */
     void execute() { func(arg); }
     virtual~Task() {}
 private:

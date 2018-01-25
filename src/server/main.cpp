@@ -10,7 +10,7 @@ int main() {
     ifstream in;
     in.open("server_settings.txt");
     if (!in.is_open()) {
-        return -1;
+        return 1;
     }
     getline(in, port);
     const char* portStr = port.c_str();
@@ -19,8 +19,8 @@ int main() {
     ////////////////////
     GameManager* manager = new GameManager();
     GameRooms *rooms = new GameRooms();
-    CommandsManager commandsManager(rooms, manager);
-    ClientHandler handler(&commandsManager);
+    CommandsManager *commandsManager = new CommandsManager(rooms, manager);
+    ClientHandler handler(commandsManager);
     Server server(n, &handler);
     try {
         server.start();
@@ -36,6 +36,7 @@ int main() {
     } catch (const char* msg) {
         delete  manager;
         delete rooms;
+        delete commandsManager;
         cout << "cannot start the server because: " << msg << endl;
         exit(-1);
     }

@@ -5,7 +5,8 @@
 #include "GameRooms.h"
 
 
-GameRooms::GameRooms() {}
+GameRooms::GameRooms() {
+}
 
 bool GameRooms::addWaitingGame(string name, int socket) {
     const char* gameName = name.c_str();

@@ -55,13 +55,13 @@ void JoinCommand::execute(vector<string> vec) {
         return;
     }
 
-    //remove the games from the waiting room
+    //remove the players from the waiting room
     gameRooms->removeWaitingGame(str);
     //add the player to the list of players that play now.
     gameRooms->addPlayersInGames(firstSocket,secondSocket);
     //run the game.
     gameManager->runGame(firstSocket, secondSocket);
-    //remove the player from the playing list.
+    //remove the players from the playing list.
     gameRooms->removePlayersInGames(firstSocket, secondSocket);
     close(firstSocket);
     close(secondSocket);
